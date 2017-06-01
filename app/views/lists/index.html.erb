@@ -1,0 +1,8 @@
+<h1> Aaron's Lists</h1>
+<% @lists.each do |list| %>
+  <h2><%= list.task %></h2>
+  <h3><%= list.priority %></h3>
+  <h3><%= list.completed %></h3>
+  <p><%= list.notes %></p>
+  <%= link_to 'Show list', list_path(list) %>
+<% end %>
